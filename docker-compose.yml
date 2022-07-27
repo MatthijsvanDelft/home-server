@@ -4,9 +4,38 @@ services:
     container_name: home-assistant
     image: "ghcr.io/home-assistant/home-assistant:stable"
     volumes:
-      - c:/Users/Matthijs-server/Documents/Repos/home-server/home-assistant:/config
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/home-assistant/config:/config
       - /etc/localtime:/etc/localtime:ro
     ports:
       - 8123:8123
-    restart: always
+    restart: unless-stopped
     privileged: true
+       
+  plex:
+    container_name: plex
+    image: lscr.io/linuxserver/plex:latest
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - VERSION=latest
+      - TZ=/etc/localtime:/etc/localtime:ro
+      - PLEX_CLAIM=claim--LYYTVwKJEytssSpBuFY
+    volumes:
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/plex/config:/config
+      - d:/Matthijs/Movies:/movies
+      - d:/Matthijs/Series:/series
+      - d:/Matthijs/Pictures:/pictures
+      - d:/Matthijs/Videos:/videos
+    ports:
+    # For Plex remote to work make sure that port forwarding is enabled on the router
+      - 32400:32400
+      - 1900:1900
+      - 3005:3005
+      - 5353:5353
+      - 8324:8324
+      - 32410:32410
+      - 32412:32412
+      - 32413:32413
+      - 32414:32414
+      - 32469:32469
