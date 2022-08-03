@@ -1,5 +1,8 @@
 # Plex related ignores
-./plex/config/*
+plex/config/*
 
 # Home Assistant related ignores
-./home-assistant/config/*
+home-assistant/config/*
+
+# Ignore temporary files
+*.bak
