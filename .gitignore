@@ -1,2 +1,5 @@
 # Plex related ignores
 ./plex/config/*
+
+# Home Assistant related ignores
+./home-assistant/config/*
