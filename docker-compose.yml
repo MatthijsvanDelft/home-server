@@ -39,3 +39,21 @@ services:
       - 32413:32413
       - 32414:32414
       - 32469:32469
+      
+  resilio-sync:
+    image: lscr.io/linuxserver/resilio-sync:latest
+    container_name: resilio-sync
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=/etc/localtime:/etc/localtime:ro
+    volumes:
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/resilio-sync/config:/config
+      - d:/Ben:/sync/ben
+      - d:/Mark:/sync/mark
+      - d:/Matthijs:/sync/matthijs
+      - d:/Meike:/sync/meike
+    ports:
+      - 8888:8888
+      - 55555:55555
+    restart: unless-stopped
