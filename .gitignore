@@ -5,8 +5,9 @@ plex/config/*
 home-assistant/config/*
 
 # Resilio Sync related ignores
-home-assistant/config/*.db
-home-assistant/config/*.db-wal
+resilio-sync/config/*.db
+resilio-sync/config/*.db-wal
+resilio-sync/config/.SyncUser1659518027/
 
 # Ignore temporary files
 *.bak
