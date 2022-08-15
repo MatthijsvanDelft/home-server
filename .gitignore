@@ -6,8 +6,12 @@ home-assistant/config/*
 
 # Resilio Sync related ignores
 resilio-sync/config/*.db
+resilio-sync/config/*.files.db
+resilio-sync/config/*.sf.db
 resilio-sync/config/*.db-wal
-resilio-sync/config/.SyncUser1659518027/
+resilio-sync/config/*.files.db-wal
+resilio-sync/config/*.sf.db-wal
+resilio-sync/config/.SyncUser1659518027/*
 
 # Ignore temporary files
 *.bak
