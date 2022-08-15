@@ -4,5 +4,9 @@ plex/config/*
 # Home Assistant related ignores
 home-assistant/config/*
 
+# Resilio Sync related ignores
+home-assistant/config/*.db
+home-assistant/config/*.db-wal
+
 # Ignore temporary files
 *.bak
