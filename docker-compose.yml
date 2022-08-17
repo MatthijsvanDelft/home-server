@@ -1,5 +1,24 @@
 version: '3.8'
-services:
+#volumes:
+#  portainer_data:
+
+services:   
+  portainer_agent:
+    image: portainer/agent
+    ports:
+      - "9001:9001"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/lib/docker/volumes:/var/lib/docker/volumes
+
+  portainer_ce:
+    image: portainer/portainer-ce
+    command: -H tcp://portainer_agent:9001 --tlsskipverify
+    ports:
+      - "9000:9000"
+    volumes:
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/portainer_ce/data:/data
+   
   homeassistant:
     container_name: home-assistant
     image: "ghcr.io/home-assistant/home-assistant:stable"
