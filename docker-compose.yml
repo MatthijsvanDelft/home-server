@@ -24,7 +24,8 @@ services:
     image: "ghcr.io/home-assistant/home-assistant:stable"
     volumes:
       - c:/Users/Matthijs-server/Documents/Repos/home-server/home-assistant/config:/config
-      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TZ=Europe/Amsterdam
     ports:
       - 8123:8123
     restart: unless-stopped
@@ -38,7 +39,7 @@ services:
       - PUID=1000
       - PGID=1000
       - VERSION=latest
-      - TZ=/etc/localtime:/etc/localtime:ro
+      - TZ=Europe/Amsterdam
       - PLEX_CLAIM=claim--LYYTVwKJEytssSpBuFY
     volumes:
       - c:/Users/Matthijs-server/Documents/Repos/home-server/plex/config:/config
@@ -65,7 +66,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=/etc/localtime:/etc/localtime:ro
+      - TZ=Europe/Amsterdam
     volumes:
       - c:/Users/Matthijs-server/Documents/Repos/home-server/resilio-sync/config:/config
       - d:/Ben:/sync/ben
