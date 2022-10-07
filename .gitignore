@@ -1,3 +1,6 @@
+# Portainer related ignores
+portainer_ce/*
+
 # Plex related ignores
 plex/config/*
 
@@ -12,6 +15,9 @@ resilio-sync/config/*.db-wal
 resilio-sync/config/*.files.db-wal
 resilio-sync/config/*.sf.db-wal
 resilio-sync/config/.SyncUser1659518027/*
+
+# Deluge related ignores
+deluge/*
 
 # Ignore temporary files
 *.bak
