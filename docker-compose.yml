@@ -77,3 +77,21 @@ services:
       - 8888:8888
       - 55555:55555
     restart: unless-stopped
+  
+  deluge:
+    container_name: deluge
+    restart: unless-stopped
+    ports:
+     - 8112:8112
+     - 6881:6881
+     - 6881:6881/udp
+    environment:
+     - PUID=1000
+     - PGID=1000
+     - TZ=Europe/Amsterdam
+     - UMASK_SET=000 
+     - DELUGE_LOGLEVEL=error 
+    volumes:
+     - c:/Users/Matthijs-server/Documents/Repos/home-server/deluge/config/:/config
+     - d:/Matthijs/Deluge/:/downloads
+    image: linuxserver/deluge
