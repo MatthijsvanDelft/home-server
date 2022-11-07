@@ -5,6 +5,7 @@ version: '3.8'
 services:   
   portainer_agent:
     image: portainer/agent
+    restart: unless-stopped
     ports:
       - "9001:9001"
     volumes:
@@ -14,6 +15,7 @@ services:
   portainer_ce:
     image: portainer/portainer-ce
     command: -H tcp://portainer_agent:9001 --tlsskipverify
+    restart: unless-stopped
     ports:
       - "9000:9000"
     volumes:
@@ -95,3 +97,30 @@ services:
      - c:/Users/Matthijs-server/Documents/Repos/home-server/deluge/config/:/config
      - d:/Matthijs/Deluge/:/downloads
     image: linuxserver/deluge
+    
+  prometheus:
+    container_name: prometheus
+    restart: unless-stopped
+    image: prom/prometheus
+    user: 1000:1000
+    ports:
+     - "9090:9090"
+    volumes:
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/prometheus/data:/prometheus
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/prometheus/config:/etc/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+
+  grafana:
+    container_name: grafana
+    restart: unless-stopped
+    image: grafana/grafana
+    user: 1000:1000
+    ports:
+     - "80:80"
+    links:
+     - prometheus
+    volumes:
+     - ./grafana/data:/var/lib/grafana
+     - ./grafana/config:/etc/grafana
