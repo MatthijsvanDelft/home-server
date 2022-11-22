@@ -124,3 +124,12 @@ services:
     volumes:
      - ./grafana/data:/var/lib/grafana
      - ./grafana/config:/etc/grafana
+   
+  homer:
+    container_name: homer
+    restart: unless-stopped
+    image: b4bz/homer:latest
+    volumes:
+     - c:/Users/Matthijs-server/Documents/Repos/home-server/homer/assets/:/www/assets
+    ports:
+     - 8080:8080
