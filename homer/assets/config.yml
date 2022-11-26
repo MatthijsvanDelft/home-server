@@ -2,7 +2,7 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
-title: "Demo dashboard"
+title: "Matthijs Server Dashboard"
 subtitle: "Homer"
 logo: "logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
@@ -46,18 +46,15 @@ message:
   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
   title: "Demo !"
   icon: "fa fa-grin"
-  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+  #content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
   - name: "Contribute"
     icon: "fab fa-github"
-    url: "https://github.com/bastienwirtz/homer"
+    url: "https://github.com/MatthijsvanDelft/home-server"
     target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:
   #- name: "another page!"
@@ -83,3 +80,55 @@ services:
         subtitle: "Another application"
         tag: "app"
         url: "#"
+        
+  - name: "Server"
+    icon: "fas fa-play-circle"
+    items:
+      - name: "Portainer"
+        type: "Portainer"
+        logo: "assets/icons/portainer_icon.png"
+        subtitle: "Portainer Docker GUI"
+        url: "http://192.168.1.83:9000/"
+        apikey: "MY-SUPER-SECRET-API-KEY"
+      - name: "Grafana"
+        logo: "assets/icons/grafana_icon.png"
+        subtitle: "Grafana dashboard of server resources"
+        url: "http://192.168.1.83/d/e4UY9zD4z/windows-node?orgId=1&refresh=5s&kiosk=tv&from=now-15m&to=now"
+        endpoint: "http://192.168.1.83/d/e4UY9zD4z/windows-node?orgId=1&refresh=5s&kiosk=tv&from=now-15m&to=now"
+      - name: "Prometjeus"
+        type: Prometheus
+        logo: "assets/icons/prometheus_icon.png"
+        subtitle: "Prometheus"
+        url: "http://192.168.1.83:9090/"
+        
+  - name: "Media"
+    icon: "fas fa-play-circle"
+    items:
+      - name: "Plex"
+        logo: "assets/icons/plex_icon.png"
+        subtitle: "Media streaming server"
+        url: "http://192.168.1.83:32400/web/index.html#!/"
+        endpoint: "http://192.168.1.83:32400/web/index.html#!/"
+      - name: "Deluge"
+        logo: "assets/icons/deluge_icon.png"
+        subtitle: "Torrent downloader"
+        url: "http://192.168.1.83:8112/"
+        endpoint: "http://192.168.1.83:8112/"
+        
+  - name: "File management"
+    icon: "fas fa-play-circle"
+    items:
+      - name: "Resilio Sync"
+        logo: "assets/icons/resilio_icon.png"
+        subtitle: "Peer to peer sync application"
+        url: "http://192.168.1.83:8888/gui/"
+        endpoint: "http://192.168.1.83:8888/gui/"
+        
+  - name: "Home automation"
+    icon: "fas fa-play-circle"
+    items:
+      - name: "Home Assistant"
+        logo: "assets/icons/home_assistant_icon.png"
+        subtitle: "Home automation assistant"
+        url: "http://localhost:8123/lovelace/0"
+        endpoint: "http://localhost:8123/lovelace/0"
