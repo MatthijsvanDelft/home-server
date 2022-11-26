@@ -1,0 +1,21 @@
+2022-11-27 00:22:46 - DEBUG   :: ('CP Server Thread-8',) : Tautulli APIv2 :: API called with kwargs: {'apikey': 'MY-SUPER-SECRET-API-KEY', 'cmd': 'get_activity'}
+2022-11-27 00:22:46 - DEBUG   :: ('CP Server Thread-8',) : Tautulli APIv2 :: Invalid apikey.
+2022-11-27 00:22:46 - DEBUG   :: ('CP Server Thread-8',) : Tautulli APIv2 :: Cleaned kwargs: None
+2022-11-27 00:27:35 - DEBUG   :: ('CP Server Thread-21',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:27:35 - DEBUG   :: ('CP Server Thread-21',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:27:49 - DEBUG   :: ('CP Server Thread-21',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:27:49 - DEBUG   :: ('CP Server Thread-21',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:28:18 - DEBUG   :: ('CP Server Thread-14',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:28:18 - DEBUG   :: ('CP Server Thread-14',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:30:53 - DEBUG   :: ('CP Server Thread-19',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:30:53 - DEBUG   :: ('CP Server Thread-19',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:32:55 - DEBUG   :: ('CP Server Thread-18',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:32:55 - DEBUG   :: ('CP Server Thread-18',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:32:55 - DEBUG   :: ('CP Server Thread-24',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:32:55 - DEBUG   :: ('CP Server Thread-24',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:32:55 - DEBUG   :: ('CP Server Thread-20',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:32:55 - DEBUG   :: ('CP Server Thread-20',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:34:20 - DEBUG   :: ('CP Server Thread-21',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:34:20 - DEBUG   :: ('CP Server Thread-21',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-27 00:34:36 - DEBUG   :: ('CP Server Thread-20',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
+2022-11-27 00:34:36 - DEBUG   :: ('CP Server Thread-20',) : Tautulli APIv2 :: Cleaned kwargs: {}
