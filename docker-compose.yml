@@ -77,7 +77,7 @@ services:
       - d:/Meike:/sync/meike
     ports:
       - 8888:8888
-      - 55555:55555
+      - 5555:5555
     restart: unless-stopped
   
   deluge:
