@@ -19,5 +19,10 @@ resilio-sync/config/.SyncUser1659518027/*
 # Deluge related ignores
 deluge/*
 
+# Grafana related ignores
+
+# Prometheus related ignores
+prometheus/data/*
+
 # Ignore temporary files
 *.bak
