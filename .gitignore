@@ -1,0 +1,23 @@
+# Portainer related ignores
+portainer_ce/*
+
+# Plex related ignores
+plex/config/*
+
+# Home Assistant related ignores
+home-assistant/config/*
+
+# Resilio Sync related ignores
+resilio-sync/config/*.db
+resilio-sync/config/*.files.db
+resilio-sync/config/*.sf.db
+resilio-sync/config/*.db-wal
+resilio-sync/config/*.files.db-wal
+resilio-sync/config/*.sf.db-wal
+resilio-sync/config/.SyncUser1659518027/*
+
+# Deluge related ignores
+deluge/*
+
+# Ignore temporary files
+*.bak
