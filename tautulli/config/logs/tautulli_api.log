@@ -39,3 +39,9 @@
 2022-11-29 21:21:39 - DEBUG   :: ('CP Server Thread-8',) : Tautulli APIv2 :: Cleaned kwargs: {}
 2022-11-29 21:34:37 - DEBUG   :: ('CP Server Thread-5',) : Tautulli APIv2 :: API called with kwargs: {'apikey': '****************', 'cmd': 'get_activity'}
 2022-11-29 21:34:37 - DEBUG   :: ('CP Server Thread-5',) : Tautulli APIv2 :: Cleaned kwargs: {}
+2022-11-29 23:02:53 - DEBUG   :: ('CP Server Thread-10',) : Tautulli APIv2 :: API called with kwargs: {'apikey': 'xV_j4QKtnH129nmO3QwRHKN64kA7KypB', 'cmd': 'get_activity'}
+2022-11-29 23:02:53 - DEBUG   :: ('CP Server Thread-10',) : Tautulli APIv2 :: Invalid apikey.
+2022-11-29 23:02:53 - DEBUG   :: ('CP Server Thread-10',) : Tautulli APIv2 :: Cleaned kwargs: None
+2022-11-29 23:02:54 - DEBUG   :: ('CP Server Thread-11',) : Tautulli APIv2 :: API called with kwargs: {'apikey': 'xV_j4QKtnH129nmO3QwRHKN64kA7KypB', 'cmd': 'get_activity'}
+2022-11-29 23:02:54 - DEBUG   :: ('CP Server Thread-11',) : Tautulli APIv2 :: Invalid apikey.
+2022-11-29 23:02:54 - DEBUG   :: ('CP Server Thread-11',) : Tautulli APIv2 :: Cleaned kwargs: None

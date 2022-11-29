@@ -3797,3 +3797,63 @@ FileExistsError: [Errno 17] File exists: '/config/cache/images'
 2022-11-29 22:19:09 - INFO    :: Thread-3 (process_queue) : Tautulli NotificationHandler :: Notification thread exiting...
 2022-11-29 22:19:09 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
 2022-11-29 22:19:09 - INFO    :: MainThread : Tautulli is shutting down...
+2022-11-29 23:02:31 - INFO    :: MainThread : Starting Tautulli v2.10.5
+2022-11-29 23:02:31 - INFO    :: MainThread : [Docker] Linux 5.10.16.3-microsoft-standard-WSL2 (#1 SMP Fri Apr 2 22:23:49 UTC 2021)
+2022-11-29 23:02:31 - INFO    :: MainThread : Europe/Amsterdam (UTC+0100)
+2022-11-29 23:02:31 - INFO    :: MainThread : Python 3.10.8 (main, Nov 10 2022, 12:59:17) [GCC 11.2.1 20220219]
+2022-11-29 23:02:31 - INFO    :: MainThread : Program Dir: /app/tautulli
+2022-11-29 23:02:31 - INFO    :: MainThread : Config File: /config/config.ini
+2022-11-29 23:02:31 - INFO    :: MainThread : Database File: /config/tautulli.db
+2022-11-29 23:02:31 - INFO    :: MainThread : Checking if the database upgrades are required...
+2022-11-29 23:02:31 - INFO    :: MainThread : Checking if configuration upgrades are required...
+2022-11-29 23:02:31 - INFO    :: MainThread : Retrieving latest version information from GitHub
+2022-11-29 23:02:31 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/commits/master
+2022-11-29 23:02:32 - DEBUG   :: MainThread : Latest version is d7f6a1b186250bedbd46ae61888d80597b8ba976
+2022-11-29 23:02:32 - INFO    :: MainThread : Comparing currently installed version with latest GitHub version
+2022-11-29 23:02:32 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/compare/v2.10.5...d7f6a1b186250bedbd46ae61888d80597b8ba976
+2022-11-29 23:02:32 - DEBUG   :: MainThread : In total, 0 commits behind
+2022-11-29 23:02:32 - INFO    :: MainThread : Tautulli is up to date
+2022-11-29 23:02:32 - INFO    :: MainThread : Tautulli NotificationHandler :: Starting background notification handler (2 threads).
+2022-11-29 23:02:32 - INFO    :: MainThread : Tautulli WebStart :: Initializing Tautulli web server...
+2022-11-29 23:02:32 - WARNING :: MainThread : Tautulli WebStart :: Web server authentication is disabled!
+2022-11-29 23:02:32 - INFO    :: MainThread : Tautulli WebStart :: Thread Pool Size: 10.
+2022-11-29 23:02:32 - INFO    :: MainThread : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
+2022-11-29 23:02:32 - INFO    :: MainThread : [29/Nov/2022:23:02:32] ENGINE Serving on http://0.0.0.0:8181
+2022-11-29 23:02:32 - INFO    :: MainThread : Tautulli is ready!
+2022-11-29 23:03:36 - INFO    :: ('CP Server Thread-14',) : Tautulli Config :: Writing configuration to file
+2022-11-29 23:03:51 - INFO    :: ('CP Server Thread-7',) : Tautulli Config :: Writing configuration to file
+2022-11-29 23:03:51 - INFO    :: ('CP Server Thread-7',) : Tautulli PlexTV :: Requesting resources for server...
+2022-11-29 23:03:52 - DEBUG   :: ('CP Server Thread-7',) : Tautulli PlexTV :: Plex Pass subscription not found.
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli Config :: Writing configuration to file
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli PlexTV :: Using user-defined URL.
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli PlexTV :: Selected server: Matthijs-server-docker (http://172.18.0.10:32400) (Linux - Version 1.29.2.6364-6d72b0cf6)
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli Config :: Writing configuration to file
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli WebStart :: Restarting Tautulli web server...
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli WebStart :: Stopping Tautulli web server...
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : [29/Nov/2022:23:03:52] ENGINE Bus STOPPING
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : [29/Nov/2022:23:03:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8181)) shut down
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : [29/Nov/2022:23:03:52] ENGINE Bus STOPPED
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : [29/Nov/2022:23:03:52] ENGINE Bus EXITING
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : [29/Nov/2022:23:03:52] ENGINE Bus EXITED
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli WebStart :: Initializing Tautulli web server...
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli WebStart :: Web server authentication is enabled: Tautulli admin (username is 'MatthijsvanDelft') and Plex admin.
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli WebStart :: Thread Pool Size: 10.
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
+2022-11-29 23:03:52 - INFO    :: ('CP Server Thread-7',) : [29/Nov/2022:23:03:52] ENGINE Serving on http://0.0.0.0:8181
+2022-11-29 23:03:53 - DEBUG   :: ('CP Server Thread-7',) : Tautulli Monitor :: Checking for active streams.
+2022-11-29 23:03:53 - INFO    :: Thread-26 (run) : Tautulli WebSocket :: Opening websocket.
+2022-11-29 23:03:53 - INFO    :: ('CP Server Thread-7',) : Scheduled background task: Check GitHub for updates
+2022-11-29 23:03:53 - INFO    :: Thread-26 (run) : Tautulli WebSocket :: Ready
+2022-11-29 23:03:53 - INFO    :: ('CP Server Thread-7',) : Scheduled background task: Optimize Tautulli database
+2022-11-29 23:03:53 - INFO    :: ('CP Server Thread-7',) : Scheduled background task: Backup Tautulli database
+2022-11-29 23:03:53 - INFO    :: ('CP Server Thread-7',) : Scheduled background task: Backup Tautulli config
+2022-11-29 23:03:53 - INFO    :: ('CP Server Thread-7',) : Scheduled background task: Refresh Plex server URLs
+2022-11-29 23:03:53 - INFO    :: ('CP Server Thread-7',) : Scheduled background task: Refresh users list
+2022-11-29 23:03:53 - INFO    :: ('CP Server Thread-7',) : Scheduled background task: Refresh libraries list
+2022-11-29 23:03:53 - INFO    :: Thread-27 (refresh_libraries) : Tautulli Libraries :: Requesting libraries list refresh...
+2022-11-29 23:03:53 - INFO    :: Thread-28 (refresh_users) : Tautulli Users :: Requesting users list refresh...
+2022-11-29 23:03:53 - INFO    :: Thread-28 (refresh_users) : Tautulli Users :: Users list refreshed.
+2022-11-29 23:04:01 - INFO    :: Thread-27 (refresh_libraries) : Tautulli Config :: Writing configuration to file
+2022-11-29 23:04:01 - INFO    :: Thread-27 (refresh_libraries) : Tautulli Libraries :: Libraries list refreshed.
+2022-11-29 23:04:04 - DEBUG   :: ('CP Server Thread-23',) : Tautulli WebAuth :: Admin user 'Ma********t' logged into Tautulli using Plex OAuth login.
+2022-11-29 23:04:05 - INFO    :: ('CP Server Thread-20',) : Tautulli Config :: Writing configuration to file
