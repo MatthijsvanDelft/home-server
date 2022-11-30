@@ -4,6 +4,13 @@ portainer_ce/*
 # Plex related ignores
 plex/config/*
 
+# Tautulli related ignores
+tautulli/config/cache/*
+tautulli/config/backups/*
+tautulli/config/logs/*
+tautulli/config/exports/*
+tautulli/config/newsletters/*
+
 # Home Assistant related ignores
 home-assistant/config/*
 
@@ -18,6 +25,11 @@ resilio-sync/config/.SyncUser1659518027/*
 
 # Deluge related ignores
 deluge/*
+
+# Grafana related ignores
+
+# Prometheus related ignores
+prometheus/data/*
 
 # Ignore temporary files
 *.bak
