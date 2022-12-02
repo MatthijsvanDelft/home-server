@@ -21,6 +21,9 @@ tautulli/config/newsletters/*
 home-assistant/config/*
 
 # Resilio Sync related ignores
+resilio-sync/config/*.dat
+resilio-sync/config/*.dat.old
+resilio-sync/config/*.pid
 resilio-sync/config/*.db
 resilio-sync/config/*.files.db
 resilio-sync/config/*.sf.db
@@ -33,6 +36,7 @@ resilio-sync/config/.SyncUser1659518027/*
 deluge/*
 
 # Grafana related ignores
+grafana/data/*.db
 
 # Prometheus related ignores
 prometheus/data/*
