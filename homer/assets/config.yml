@@ -89,7 +89,7 @@ services:
         logo: "assets/icons/portainer_icon.png"
         subtitle: "Portainer Docker GUI"
         url: "http://192.168.1.83:9000/"
-        apikey: "MY-SUPER-SECRET-API-KEY"
+        apikey: "ptr_NsEsxT0wQXVuFyonSLSC6GOeOGktauLyGPbfBw+kRHw="
       - name: "Grafana"
         logo: "assets/icons/grafana_icon.png"
         subtitle: "Grafana dashboard of server resources"
@@ -123,16 +123,23 @@ services:
     icon: "fas fa-play-circle"
     items:
       - name: "Resilio Sync"
+        type: Ping
         logo: "assets/icons/resilio_icon.png"
         subtitle: "Peer to peer sync application"
         url: "http://192.168.1.83:8888/gui/"
         endpoint: "http://192.168.1.83:8888/gui/"
+      - name: "Duplicati"
+        type: Ping
+        method: "head"
+        logo: "assets/icons/duplicati_icon.png"
+        subtitle: "Back-up application"
+        url: "http://192.168.1.83:8200/ngax/index.html"
         
   - name: "Home automation"
     icon: "fas fa-play-circle"
     items:
       - name: "Home Assistant"
+        type: Ping
         logo: "assets/icons/home_assistant_icon.png"
         subtitle: "Home automation assistant"
-        url: "http://localhost:8123/lovelace/0"
-        endpoint: "http://localhost:8123/lovelace/0"
+        url: "http://192.168.1.83:8123/lovelace/0"
