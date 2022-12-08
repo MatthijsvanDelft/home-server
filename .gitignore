@@ -1,9 +1,6 @@
 # Portainer related ignores
 portainer_ce/*
 
-# Homer related ignores
-homer/assets/*.yml.bak
-
 # Plex related ignores
 plex/config/*
 !plex/config/Library
@@ -41,5 +38,8 @@ grafana/data/*.db
 # Prometheus related ignores
 prometheus/data/*
 
+# Duplicati related ignores
+
 # Ignore temporary files
 *.bak
+*.yml.bak
