@@ -146,3 +146,19 @@ services:
      - c:/Users/Matthijs-server/Documents/Repos/home-server/homer/assets/:/www/assets
     ports:
      - 8080:8080
+     
+  duplicati:
+    image: lscr.io/linuxserver/duplicati:latest
+    container_name: duplicati
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+      - CLI_ARGS= #optional
+    volumes:
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/duplicati/assets/:/config
+      - c:/Users/Matthijs-server/:/backups
+      - c:/Users/Matthijs-server/:/source
+    ports:
+      - 8200:8200
+    restart: unless-stopped

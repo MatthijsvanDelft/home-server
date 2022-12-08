@@ -41,5 +41,8 @@ grafana/data/*.db
 # Prometheus related ignores
 prometheus/data/*
 
+# Duplicati related ignores
+
 # Ignore temporary files
 *.bak
+*.yml.bak
