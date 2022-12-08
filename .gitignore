@@ -1,9 +1,6 @@
 # Portainer related ignores
 portainer_ce/*
 
-# Homer related ignores
-homer/assets/*.yml.bak
-
 # Plex related ignores
 plex/config/*
 !plex/config/Library

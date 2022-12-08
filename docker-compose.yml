@@ -138,14 +138,19 @@ services:
   #   - ./grafana/data:/var/lib/grafana
   #   - ./grafana/config:/etc/grafana
    
-  homer:
-    container_name: homer
-    restart: unless-stopped
-    image: b4bz/homer:latest
+  heimdall:
+    image: lscr.io/linuxserver/heimdall:latest
+    container_name: heimdall
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
     volumes:
-     - c:/Users/Matthijs-server/Documents/Repos/home-server/homer/assets/:/www/assets
+      - c:/Users/Matthijs-server/Documents/Repos/home-server/heimdall/config:/config
     ports:
-     - 8080:8080
+      - 80:80
+      - 443:443
+    restart: unless-stopped
      
   duplicati:
     image: lscr.io/linuxserver/duplicati:latest
