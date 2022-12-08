@@ -90,7 +90,7 @@ services:
       - d:/Meike:/sync/meike
     ports:
       - 8888:8888
-      - 5555:5555
+      - 55555:55555
     restart: unless-stopped
   
   deluge:
@@ -111,32 +111,32 @@ services:
      - d:/Matthijs/Deluge/:/downloads
     image: linuxserver/deluge
     
-  prometheus:
-    container_name: prometheus
-    restart: unless-stopped
-    image: prom/prometheus
-    user: 1000:1000
-    ports:
-     - "9090:9090"
-    volumes:
-      - c:/Users/Matthijs-server/Documents/Repos/home-server/prometheus/data:/prometheus
-      - c:/Users/Matthijs-server/Documents/Repos/home-server/prometheus/config:/etc/prometheus
-    command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
-      - '--storage.tsdb.path=/prometheus'
-
-  grafana:
-    container_name: grafana
-    restart: unless-stopped
-    image: grafana/grafana
-    user: 1000:1000
-    ports:
-     - "80:80"
-    links:
-     - prometheus
-    volumes:
-     - ./grafana/data:/var/lib/grafana
-     - ./grafana/config:/etc/grafana
+  #prometheus:
+  #  container_name: prometheus
+  #  restart: unless-stopped
+  #  image: prom/prometheus
+  #  user: 1000:1000
+  #  ports:
+  #   - "9090:9090"
+  #  volumes:
+  #    - c:/Users/Matthijs-server/Documents/Repos/home-server/prometheus/data:/prometheus
+  #    - c:/Users/Matthijs-server/Documents/Repos/home-server/prometheus/config:/etc/prometheus
+  #  command:
+  #    - '--config.file=/etc/prometheus/prometheus.yml'
+  #    - '--storage.tsdb.path=/prometheus'
+  #
+  #grafana:
+  #  container_name: grafana
+  #  restart: unless-stopped
+  #  image: grafana/grafana
+  #  user: 1000:1000
+  #  ports:
+  #   - "80:80"
+  #  links:
+  #   - prometheus
+  #  volumes:
+  #   - ./grafana/data:/var/lib/grafana
+  #   - ./grafana/config:/etc/grafana
    
   homer:
     container_name: homer
@@ -157,7 +157,7 @@ services:
       - CLI_ARGS= #optional
     volumes:
       - c:/Users/Matthijs-server/Documents/Repos/home-server/duplicati/assets/:/config
-      - c:/Users/Matthijs-server/:/backups
+      - d:/Matthijs/\Documents/Backups/:/backups
       - c:/Users/Matthijs-server/:/source
     ports:
       - 8200:8200
