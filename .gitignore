@@ -40,6 +40,11 @@ prometheus/data/*
 
 # Duplicati related ignores
 
+#Heimdall related ignores
+heimdall/config/log/**
+heimdall/config/www/logs/*
+heimdall/config/keys/*
+
 # Ignore temporary files
 *.bak
 *.yml.bak
