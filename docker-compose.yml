@@ -139,6 +139,23 @@ services:
   #  volumes:
   #   - ./grafana/data:/var/lib/grafana
   #   - ./grafana/config:/etc/grafana
+  
+     
+  prometheus:
+      container_name: prometheus
+      image: prom/prometheus
+      restart: unless-stopped
+      ports:
+          - 9090:9090 #modify 9091 to your setup needs
+      volumes:
+          - c:/Users/Matthijs-server/Documents/Repos/home-server/prometheus/config:/etc/prometheus
+  
+  grafana:
+      container_name: grafana
+      image: grafana/grafana
+      restart: unless-stopped
+      ports:
+          - 3457:3000 #modify 3457 to your setup needs      
    
   heimdall:
     image: lscr.io/linuxserver/heimdall:latest
